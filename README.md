@@ -149,4 +149,26 @@ So it basically sets the value of the hidden input to `btoa(index + solution)`. 
 the `i = 17022`, it would send `btoa(6) + 17022`, which would end up being `Ng==17022`!
 
 A simple POC replicating 1:1 the Javascript is available in this repo. Is not optimized but it can bypass the
-protection in a few tens of milliseconds.
+protection in a few milliseconds.
+
+Sample POC output:
+```
+$ go run main.go
+2022/12/16 01:03:54 secret is JYfcK3AhngHau2R3qCTSUckvb7xtzfJXTkgyfqes9zAs5DOoqVKGE0OAM5g2qKvsRr6LDSFEe0vQ4oQvchoLniZQbfdhDEaNU33xqoMnw9RYSbt76uH8sHeUslvPdiRg
+2022/12/16 01:03:54 found solution NA==1206 in 2.6332ms
+2022/12/16 01:03:54 main page code:
+<!DOCTYPE html>
+<!--                                 HETZNER ONLINE GMBH                                            -->
+<!--            Glad to see you are interested in our Source Code. We are always looking for                    -->
+<!--            Talents to work with us. Why don't you visit our Career Center at career.hetzner.com.   -->
+
+<!--[if !IE]><!-->
+<html lang="en-US">
+<!--<![endif]-->
+<!--[if IE 6 ]><html lang="en-US" class="ie ie6"><![endif]-->
+<!--[if IE 7 ]><html lang="en-US" class="ie ie7"><![endif]-->
+<!--[if IE 8 ]><html lang="en-US" class="ie ie8"><![endif]-->
+<head>
+    <base href="https://www.hetzner.com/"><!--[if lte IE 6]></base><![endif]-->
+    <title>Dedicated Server, Cloud, Storage &amp; Hosting</title>
+```

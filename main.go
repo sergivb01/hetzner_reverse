@@ -91,6 +91,7 @@ func main() {
 		}
 		defer res.Body.Close()
 
+		log.Printf("main page code:")
 		io.Copy(os.Stdout, res.Body)
 	}
 }
