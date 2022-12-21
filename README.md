@@ -1,3 +1,6 @@
+### Note ⚠️
+Hetzner has changed the prefix `0020` for `200`.
+
 # Hetzner Ray Protection Bypass
 
 Hetzner recently introduced a protection system similar to Cloudflare's Integrity Check, that checks that
