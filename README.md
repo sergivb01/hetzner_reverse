@@ -1,5 +1,5 @@
-### Note ⚠️
-Hetzner has changed the prefix `0020` for `200`.
+# Disclaimer ⚠️
+This repository does not intend to harm or disfigure Hetzner Online GmbH or any other organisation using a similar protection method nor do I endorse the use of this PoC in malicious purposes as is merely for educational purposes to show the short comings of such a protection method.
 
 # Hetzner Ray Protection Bypass
 
@@ -13,6 +13,8 @@ Hetzner's implementation lacks security and is really easy to bypass.
 </p>
 
 ## How to
+
+**Note**: hetzner has changed the prefix `0020` to `200`. 
 
 We'll use `curl` to get the source code for the challenge page. We must provide a file to store cookies otherwise
 we will get in a redirection loop.
